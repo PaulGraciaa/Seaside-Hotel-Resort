@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #006d77;
+  padding: 10px 20px; /* Mengurangi tinggi padding */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Batasi tinggi header */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  height: 240px;  /* Mengecilkan tinggi logo */
+  width: auto;   /* Menjaga rasio gambar */
+  margin-left: 20px;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.hero {
+  background-image: url('img/baghotell.jpg'); /* Ganti dengan gambar latar belakang kamu */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.hero-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 20px 0;
+  background-color: #006d77;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.facilities-label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.facilities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.facility {
+  text-align: center;
+}
+
+.facility img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.facility p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #12636b;
+  padding: 40px 20px;
+  color: white;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.footer-columns div {
+  margin: 10px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 10px;
+}
+
+.footer-columns a {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #e0f7fa;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.legal {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b2dfdb;
+}
