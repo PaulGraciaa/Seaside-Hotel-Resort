@@ -1,5 +1,5 @@
 /* Mengatur properti dasar untuk seluruh halaman */
-body {
+body:not(.login-page) {
   margin: 0; /* Menghilangkan margin bawaan browser */
   font-family: 'Open Sans', sans-serif; /* Menentukan jenis huruf yang digunakan */
   color: #fff; /* Warna teks default jadi putih */
@@ -13,7 +13,7 @@ body {
 }
 
 /* Efek gelap transparan di atas background */
-body::before {
+body:not(.login-page)::before {
   content: "";
   position: fixed;
   top: 0;
@@ -358,4 +358,186 @@ a {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+/* ================= */
+/* Login Page Style  */
+/* ================= */
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Bagian kiri dengan gambar background */
+.login-left {
+  flex: 1;
+  background-image: url('login.jpg'); /* Ganti jika berbeda */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Bagian kanan untuk form login */
+.login-right {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Kotak login */
+.login-box {
+  background-color: #276d7b;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.login-box p {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* Input field */
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box; /* Ini penting biar padding gak nambahin lebar */
+  outline: none;
+  font-size: 14px;
+}
+
+/* Tombol Login */
+.login-box button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  color: #276d7b;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  box-sizing: border-box; /* Ini penting biar padding gak nambahin lebar */
+  margin-top: 10px;
+}
+
+.login-box button:hover {
+  background-color: white;
+  color: #276d7b;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Link "Forgot Password" */
+.login-box a {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #e0f7fa;
+}
+
+
+/* ================= */
+/* Notifikasi Section */
+/* ================= */
+.notification-wrapper {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.notification-page {
+  background: #f9f9f9;
+  padding: 50px 20px; 
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.notif-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.notif-filter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.notif-filter button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-all {
+  background-color: #005469;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn-unread {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-read {
+  background-color: #00d100;
+  color: #fff;
+}
+
+.notif-list {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.notif-item {
+  padding: 15px;
+  border-bottom: 1px solid #000000; /* untuk warna tulisan*/
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-item.unread {
+  font-weight: bold;
+  background-color: #1267ad; /* untuk bagroung tulisan isi notifikasi*/
+}
+
+.notif-time {
+  font-size: 0.9rem;
+  color: #000000;
 }
