@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pemesanan</title>
+  <link rel="stylesheet" href="../css/booking.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="nav-container">
+      <img src="../img/logo.png" class="logo" alt="Logo Hotel" />
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Room & Suites</a>
+        <a href="facility.html">Facility</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <!-- Ikon Notifikasi & Profil -->
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konten Form Pemesanan -->
+  <div class="form-container">
+    <h2>FORM PEMESANAN</h2>
+    <form class="booking-form">
+      <div class="form-left">
+        <label>Nama Pemesan :</label>
+        <input type="text" placeholder="Masukkan nama" />
+
+        <label>Jenis Kelamin :</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" /> Laki - Laki</label>
+          <label><input type="radio" name="gender" /> Perempuan</label>
+        </div>
+
+        <label>Nomor Identitas (NIK) :</label>
+        <input type="text" placeholder="Masukkan nomor NIK" />
+
+        <label>Tipe Kamar :</label>
+        <select>
+          <option selected disabled>Pilih tipe kamar</option>
+          <option>Standard</option>
+          <option>Deluxe</option>
+          <option>Suite</option>
+        </select>
+      </div>
+
+      <div class="form-right">
+        <label>Harga :</label>
+        <input type="text" value="Rp. 0,000,000" disabled />
+
+        <label>Tanggal Pesan :</label>
+        <input type="date" />
+
+        <label>Durasi Menginap (Malam) :</label>
+        <select>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <label><input type="checkbox" checked /> Termasuk Breakfast</label>
+
+        <label>Total Biaya :</label>
+        <input type="text" value="Rp. 0,000,000" disabled />
+      </div>
+
+      <div class="form-buttons">
+        <button type="button" class="btn hitung">Hitung Total Bayaran</button>
+        <button type="submit" class="btn booking">Booking</button>
+        <button type="reset" class="btn cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <h2>SEASIDE</h2>
+    
+    <div class="footer-columns">
+      <div>
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>
+        <h4>Reservations</h4>
+        <a href="#">Request an invoice</a>
+        <a href="#">Find a reservation</a>
+        <a href="#">Email Preferences</a>
+      </div>
+      <div>
+        <h4>News</h4>
+        <a href="#">Press Room</a>
+        <a href="#">New Openings</a>
+        <a href="#">Magazine</a>
+        <a href="#">Newsletter</a>
+      </div>
+    </div>
+
+    <!-- Ikon Sosial Media -->
+<div class="socials">
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/ltfiia_" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+
+
+    <!-- Garis pemisah -->
+    <hr class="footer-separator" />
+
+    <!-- Legal -->
+    <div class="legal">
+        <a href="#">Legal Notice</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Preferences</a> | 
+        <a href="#">Cookie Accessibility Policy</a>
+      </div>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+</body>
+</html>
