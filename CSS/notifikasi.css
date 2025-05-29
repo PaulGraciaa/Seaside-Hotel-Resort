@@ -1,0 +1,69 @@
+/* Bagian footer */
+.footer {
+  background-color: #12636b; /* Warna latar belakang */
+  padding: 5px 0px; /* Ruang dalam */
+  color: white; /* Warna teks */
+  margin-top: 8px; /* Jarak dari gambar */
+  font-size: 25px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Bayangan di atas footer */
+  
+}
+
+/* Konten utama di dalam footer */
+.footer-content {
+  max-width: 1000px; /* Maksimal lebar konten */
+  margin: auto; /* Tengah halaman */
+  width: 100%; /* Supaya tetap responsif */
+  text-align: center; /* Rata tengah */
+  padding: 0 20px;
+}
+
+/* Bagian kolom-kolom footer yang tulisan about, reservasion dan news*/
+.footer-columns {
+  display: flex;
+  justify-content: space-between; /* Biar jaraknya merata kiri-kanan */
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 1000px; /* Batasi lebar konten footer */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px; /* Jarak dari tepi kiri-kanan */
+}
+
+/* Setiap kolom di footer */
+.footer-columns div {
+  margin: 10px 10px; /* Jarak antar kolom */
+}
+
+/* Judul masing-masing kolom */
+.footer-columns h4 {
+  margin-bottom: 10px;
+}
+
+/* Link di footer */
+.footer-columns a {
+  display: block; /* Tampilkan sebagai blok, satu per baris */
+  margin: 5px 0;
+  font-size: 14px;
+  color: #e0f7fa; /* Warna link yang lebih terang */
+}
+
+/* Bagian sosial media */
+.socials {
+  margin-top: 20px;
+}
+
+/* Link icon sosial media */
+.socials a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Legal notice kecil di bawah footer */
+.legal {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b2dfdb;
+}
