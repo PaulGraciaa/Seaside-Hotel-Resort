@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seaside Login</title>
+  <link rel="stylesheet" href="../css/pembayaran.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="nav-container">
+      <img src="../img/logo.png" class="logo" alt="Logo Hotel" />
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Room & Suites</a>
+        <a href="facility.html">Facility</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <!-- Ikon Notifikasi & Profil -->
+                    <a href="login.html"><i class="fas fa-user-circle"></i></a>
+                    <a href="notifikasi.html"><i class="fas fa-bell"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konten Form Pembayaran -->
+  <div class="payment-content">
+    <h2>PEMBAYARAN</h2>
+
+    <div class="payment-row">
+      <label>ID Booking</label>
+      <span>123456789012</span>
+    </div>
+
+    <div class="payment-row">
+      <label>Total Pembayaran</label>
+      <span>Rp.0.000.000</span>
+    </div>
+
+    <div class="payment-row">
+      <label>Status</label>
+      <span class="status-unpaid">Belum dibayar</span>
+    </div>
+
+
+    <div class="payment-method">
+      <label>Pilih Metode Pembayaran :</label>
+      <div class="method-option">
+        <input type="radio" id="va" name="metode" value="va">
+        <label for="va">VA (Virtual Account)<br><small>89278272992929</small></label>
+      </div>
+      <div class="method-option">
+        <input type="radio" id="resepsionis" name="metode" value="resepsionis">
+        <label for="resepsionis">Bayar di Resepsionis</label>
+      </div>
+    </div>
+
+    <div class="payment-instruction">
+      <strong>Instruksi</strong><br>
+      Jika memilih <em>“Bayar di Resepsionis”</em>, silahkan tunjukkan ID Booking ini saat Check-in untuk menyelesaikan pembayaran.
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>SEASIDE</h2>
+      <div class="footer-columns">
+        <div>
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div>
+          <h4>Reservations</h4>
+          <a href="#">Request an invoice</a>
+          <a href="#">Find a reservation</a>
+          <a href="#">Email Preferences</a>
+        </div>
+        <div>
+          <h4>News</h4>
+          <a href="#">Press Room</a>
+          <a href="#">New Openings</a>
+          <a href="#">Magazine</a>
+          <a href="#">Newsletter</a>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/ltfiia_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <hr class="footer-separator" />
+      <div class="legal">
+        <a href="#">Legal Notice</a> `
+        <a href="#">Privacy Policy</a> `
+        <a href="#">Cookie Preferences</a> `
+        <a href="#">Cookie Accessibility Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</body>
+</html>

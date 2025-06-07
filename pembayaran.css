@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header Baru */
+.header {
+  background-color: #006d77;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 240px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+/* header nontifikasi dan profile */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #006d77;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .socials a,
+  .user-icons a {
+    color: #333;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .socials a:hover,
+  .user-icons a:hover {
+    color: #007bff;
+  }
+
+  .user-icons {
+    display: flex;
+    align-items: center;
+  }
+
+
+/* Form Container */
+.payment-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  backdrop-filter: blur(6px);
+}
+
+.payment-content h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* Baris informasi */
+.payment-row {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.payment-row label {
+  flex: 1;
+  font-weight: bold;
+  color: #000;
+}
+
+.payment-row span {
+  flex: 1;
+  text-align: left; /* ⬅️ ubah dari right ke left */
+  padding-left: 150px; /* ⬅️ tambahkan jarak sedikit */
+  font-weight: 500;
+  color: #000;
+}
+
+/* Warna merah untuk status belum dibayar */
+.status-unpaid {
+  color: #d63031;
+  font-weight: bold;
+}
+
+
+/* Status merah bold */
+.status-unpaid {
+  color: #000000 !important;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Metode pembayaran */
+.payment-method {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.payment-method > label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Radio option */
+.method-option {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.method-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+
+.method-option label {
+  line-height: 1.4;
+  color: #222;
+  font-size: 14px;
+}
+
+.method-option small {
+  display: block;
+  font-size: 12px;
+  color: #555;
+  margin-top: 2px;
+}
+
+/* Instruksi */
+.payment-instruction {
+  margin-top: 25px;
+  padding: 10px 0 0 0;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.payment-instruction strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #12636b;
+  padding: 30px 0;
+  color: white;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.footer-columns div {
+  margin: 10px;
+  flex: 1 1 200px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-columns a {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #e0f7fa;
+  text-decoration: none;
+}
+
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+
+/* posisi sosial media  */
+  .socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .socials a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .socials a:hover {
+    color: #007bff;
+  }
+
+
+/* Legal Links */
+.legal {
+  font-size: 13px;
+  color: #e0f7fa;
+  text-align: left;
+}
+
+.legal a {
+  color: #e0f7fa;
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
